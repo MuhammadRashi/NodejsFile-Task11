@@ -22,6 +22,23 @@ readFileMethod2=(()=>{
         console.log(data,"read file");
     })
 })
+
+checkFileExist=(()=>{
+    fs.access("myfile.txt",(err)=>{
+        if(err)
+        {
+            // throw err
+            console.log("Not exist");
+        
+        }else{
+
+            console.log("File exist");
+        }
+    })
+})
+
+
+
 appendFile=(()=>{
 
     fs.appendFileSync("myfile.txt"," append data");

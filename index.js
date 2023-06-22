@@ -22,7 +22,8 @@ function myfun(){
 
     // createfile();
     // readFile();
-    readFileMethod2();
+    // readFileMethod2();
+    checkFileExist()
     // appendFile();
     return "debug media";
 }
