@@ -15,6 +15,13 @@ readFile=(()=>{
     console.log(data);
 
 })
+
+readFileMethod2=(()=>{
+    fs.readFile("myfile.txt","utf8",(err,data)=>{
+        if(err) throw err;
+        console.log(data,"read file");
+    })
+})
 appendFile=(()=>{
 
     fs.appendFileSync("myfile.txt"," append data");

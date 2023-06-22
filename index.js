@@ -22,8 +22,8 @@ function myfun(){
 
     // createfile();
     // readFile();
-    
-    appendFile();
+    readFileMethod2();
+    // appendFile();
     return "debug media";
 }
 
